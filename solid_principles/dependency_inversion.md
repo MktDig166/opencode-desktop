@@ -1,4 +1,4 @@
-**5. [D] Dependency Inversion Principle (DIP)**
+# **5. [D] Dependency Inversion Principle (DIP)**
 
 ---
 

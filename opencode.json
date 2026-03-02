@@ -1,0 +1,27 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "instructions": [
+    "solid_principles/solid_application_rules.md",
+    "solid_principles/single_responsibility.md",
+    "solid_principles/open_closed.md",
+    "solid_principles/liskov_substitution.md",
+    "solid_principles/interface_segregation.md",
+    "solid_principles/dependency_inversion.md",
+    "code_directives/separation_of_concerns.md",
+    "code_directives/orthogonality.md",
+    "code_directives/law_of_demeter.md",
+    "code_directives/dont_repeat_yourself.md",
+    "code_directives/you_arent_gonna_need_it.md",
+    "code_directives/keep_it_simple_smart.md",
+    "clean_code/meaningful_names.md",
+    "clean_code/small_functions.md",
+    "clean_code/comments.md",
+    "clean_code/formatting.md",
+    "clean_code/objects_data_structures.md",
+    "clean_code/error_handling.md",
+    "clean_code/boundaries.md",
+    "clean_code/unit_tests.md",
+    "clean_code/classes.md",
+    "clean_code/systems.md"
+  ]
+}

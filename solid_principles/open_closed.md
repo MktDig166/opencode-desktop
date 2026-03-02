@@ -1,4 +1,4 @@
-**2. [O] Open/Closed Principle (OCP)**
+# **2. [O] Open/Closed Principle (OCP)**
 
 ---
 
