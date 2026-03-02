@@ -82,3 +82,78 @@ After each execution cycle, you **must** present a clear, objective report in th
 - These phrases are **destructive**: when the file is saved with them, all content that should appear below is permanently lost.
 - This applies especially to documentation files, `README.md`, text files, and any other long-form content.
 - If the file is large, write it entirely from start to finish, without shortcuts.
+
+---
+
+## 7. Response Format
+
+### 📋 1º ANALYSIS CYCLE (MANDATORY)
+
+---
+
+#### 1) Phase 1: [Phase Name]
+Description of what was identified/analyzed in this phase
+
+---
+
+#### 2) Phase 2: [Phase Name]
+Description of what was identified/analyzed in this phase
+
+---
+
+#### 3) Phase 3: [Phase Name]
+Description of what was identified/analyzed in this phase
+
+*[Additional phases may be added as needed, following the same numbering pattern]*
+
+---
+
+### 📋 2º ANALYSIS AUDIT (MANDATORY)
+
+**What was found:**
+
+1. [First identified issue and correction applied]
+2. [Second identified issue and correction applied]
+3. [Third identified issue and correction applied]
+   OR
+- Great, no issues found, strategy validated.
+
+*[Additional items may be added as needed, following the same numbering pattern]*
+
+---
+
+### 🎯 Implementation Strategy (ONLY AFTER AUDIT)
+
+#### **Step 1:**
+[Short, didactic, and objective description]
+
+---
+
+#### **Step 2:**
+[Short, didactic, and objective description]
+
+---
+
+#### **Step 3:**
+[Short, didactic, and objective description]
+
+*[Additional steps may be added as needed, following the same pattern]*
+
+---
+
+## 8. Token Monitoring (OBRIGATÓRIO)
+
+### 8.1 Relatório de Tokens (OBRIGATÓRIO)
+APÓS CADA RESPOSTA/OPERAÇÃO, o OpenCode DEVE informar:
+- Tokens estimados usados nesta operação
+- Percentual do limite de 100k tokens
+
+Exemplo de relatório:
+> 📊 Tokens usados nesta operação: ~X,XXX | Total estimado: ~XX,XXX (XX% do limite de 100k)
+
+### 8.2 Alerta de Limite
+Quando os tokens ultrapassarem ~90k (90%), exibir:
+⚠️ **ATENÇÃO**: Você está próximo do limite de 100k tokens!
+
+### 8.3 Comando de Verificação
+Incentivar uso de `/tokens` para verificação manual quando apropriado.

@@ -72,8 +72,8 @@ Comece sua resposta estritamente com a seguinte frase:
 # CONFIGURAÇÃO DO EDITOR - NOTEPAD++ (OBRIGATÓRIO)
 # ============================================================
 
-# Define Notepad++ como editor do Git (forçado)
-git config --global core.editor "notepad++ -multiInst -notabbar -nosession"
+# Define Notepad++ como editor do Git (forçado com caminho completo)
+git config --global core.editor "C:/Program Files/Notepad++/notepad++.exe -multiInst -notabbar -nosession"
 
 # Confirma configuração
 echo "✅ Editor configurado: Notepad++"
@@ -121,20 +121,47 @@ EOF
 
 **PASSO 4 — Execute a sequência Git**
 
-⚠️ **IMPORTANTE**: O comando `git commit --amend -e` é OBRIGATÓRIO para forçar a abertura do editor!
+⚠️⚠️⚠️ **ATENÇÃO MÁXIMA: O EDITOR DEVE ABRIR! ⚠️⚠️⚠️**
 
-Um comando por linha, sem `&&`:
+Execute UM COMANDO POR VEZ, na ordem exata abaixo:
+
 ```bash
+# PASSO 4.1 - Adicione os arquivos
 git add .
+```
+
+```bash
+# PASSO 4.2 - Faça o primeiro commit com a mensagem
 git commit -F /tmp/commit_msg.txt
-GIT_EDITOR="notepad++ -multiInst -notabbar -nosession" 
+```
+
+```bash
+# PASSO 4.3 - Configure o editor (OBRIGATÓRIO)
+export GIT_EDITOR='"C:/Program Files/Notepad++/notepad++.exe" -multiInst -notabbar -nosession'
+
+# Verifique se foi configurado corretamente (opcional)
+echo "Editor configurado: $GIT_EDITOR"
+```
+
+```bash
+# PASSO 4.4 - Abra o editor para editar a mensagem (OBRIGATÓRIO -e)
 git commit --amend -e
+```
+
+```bash
+# PASSO 4.5 - Envie para o GitHub
 git push origin main
 ```
 
-> **O parâmetro `-e` é OBRIGATÓRIO e força a abertura do editor para editar a mensagem.**
-> 
-> **O `GIT_EDITOR="notepad++ -multiInst -notabbar -nosession"` é o fallback de segurança que garante o Notepad++ abrir.**
-> 
-> O Notepad++ abrirá com a mensagem montada. Revise, ajuste o que quiser, salve e feche.
-> O `git push origin main` finaliza o envio.
+---
+
+### ⚠️⚠️⚠️ VERIFICAÇÃO OBRIGATÓRIA
+
+**APÓS executar o PASSO 4.4, o Notepad++ DEVE abrir automaticamente!**
+
+- Se o Notepad++ **ABRIU**: ✅ Perfeito! Edite a mensagem, salve e feche o editor
+- Se o Notepad++ **NÃO ABRIU**: ❌ PARE IMEDIATAMENTE! Não prossiga com o push!
+
+**O comando `git commit --amend -e` com a flag `-e` é OBRIGATÓRIO e deve forçar a abertura do Notepad++!**
+
+> **Regra absoluta**: O editor DEVE abrir antes do push. Se não abrir, investigue o problema antes de continuar.
