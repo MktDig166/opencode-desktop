@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cdac4d79-ac81-41e4-a8b8-082fb2bb30c6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/AGENTS.md" beforeDir="false" afterPath="$PROJECT_DIR$/AGENTS.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands/doublecheck.md" beforeDir="false" afterPath="$PROJECT_DIR$/commands/doublecheck.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,13 +51,14 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/SERVIDOR/.config/opencode&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/SERVIDOR/.config/opencode/solid_principles&quot;,
     &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SERVIDOR\.config\opencode\solid_principles" />
       <recent name="C:\Users\SERVIDOR\.config\opencode" />
       <recent name="C:\Users\SERVIDOR\.config\opencode\commands" />
     </key>
